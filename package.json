@@ -1,0 +1,20 @@
+{
+  "name": "team-926-frontend",
+  "version": "1.0.0",
+  "description": "[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a4c572a2955f41e59a7419f8b37211f0)](https://www.codacy.com/gh/BuildForSDGCohort2/Team-926-Frontend?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BuildForSDGCohort2/Team-926-Frontend&amp;utm_campaign=Badge_Grade)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuildForSDGCohort2/Team-926-Frontend.git"
+  },
+  "author": "Igune Justine Robert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BuildForSDGCohort2/Team-926-Frontend/issues"
+  },
+  "homepage": "https://github.com/BuildForSDGCohort2/Team-926-Frontend#readme"
+}
