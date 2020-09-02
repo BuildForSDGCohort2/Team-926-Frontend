@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/BuildForSDGCohort2/Team-926-Frontend/issues"
   },
-  "homepage": "https://github.com/BuildForSDGCohort2/Team-926-Frontend#readme"
+  "homepage": "https://github.com/BuildForSDGCohort2/Team-926-Frontend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
