@@ -7,8 +7,8 @@ const {v4: uuidv4} = require("uuid");
 app.set("view engine", "ejs");
 
 app.get("/", (req, res)=>{
-  res.status(200).send("Hello African Health Store");
-  /*res.render("room");*/
+  /*res.status(200).send("Hello African Health Store");*/
+  res.render("room");
 })
 
 
