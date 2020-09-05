@@ -1,8 +1,8 @@
-#video-grid{
+#video-grid {
   display: flex;
   justify-content: center;
 }
-video{
+video {
   height: 300px;
   width: 400px;
   object-fit: cover;
