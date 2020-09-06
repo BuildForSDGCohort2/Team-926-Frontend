@@ -12,19 +12,19 @@ app.get("/", (req, res)=> {
   res.redirect(`/${uuidv4()}`); /*Using string literals*/
 });
 
-app.get('/:room', (req, res) => {
-  res.render('room', { roomId: req.params.room })
+app.get("/:room", (req, res) => {
+  res.render("room", { roomId: req.params.room })
 })
 
 io.on("connection", socket => {
-  socket.on("join-room", (roomId) => {
-    /*console.log("We've joined the room");*/
-    socket.join(roomId);
-    socket.to(roomId).broadcast.emit("user-connected");
+  socket.on("join-room", (roomId, userId) => {
+    socket.join(roomId)
+    socket.to(roomId).broadcast.emit("user-connected", userId)
+
+    socket.on('disconnect', () => {
+      socket.to(roomId).broadcast.emit("user-disconnected", userId)
+    })
   })
 })
-
-
-
 
 server.listen(process.env.PORT|| 2020);
