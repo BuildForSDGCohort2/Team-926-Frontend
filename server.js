@@ -7,7 +7,7 @@ const { Socket } = require("dgram");
 app.set("view engine", "ejs");  
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/", (req, res)=> {
   /*res.status(200).send("Hello African Health Store");*/
   res.redirect(`/${uuidv4()}`); /*Using string literals*/
 });
