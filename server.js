@@ -27,4 +27,4 @@ io.on("connection", socket => {
 
 
 
-server.listen(2020);
+server.listen(process.env.PORT|| 2020);
