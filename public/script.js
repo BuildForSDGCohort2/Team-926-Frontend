@@ -31,14 +31,18 @@ navigator.mediaDevices.getUserMedia({
   });
 
   const connectToNewUser = (userId) => {
-    console.log(userId);
+    const call = peer.call(userId, stream);
+      const video = document.createElement("video");
+      call.on("stream", userVideoStream => {
+        addVideoStream(video, userVideoStream);
+      });
   }
 
   // input value
   let text = $("input");
-  // when press enter send message
+  // Press enter  to send message
   $("html").keydown(function (e) {
-    if (e.which == 13 && text.val().length !== 0) {
+    if (e.which === 13 && text.val().length !== 0) {
       socket.emit("message", text.val());
       text.val("")
     }
