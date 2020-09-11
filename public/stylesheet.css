@@ -224,8 +224,8 @@ video {
 .navbar-brand {
   display: flex;
   flex-direction: column;
-  /*justify-content: space-around;
-  justify-content: center; */
+  justify-content: space-around;
+  /*justify-content: center; */
 } 
 
 footer,
