@@ -196,7 +196,7 @@ video {
 
 .main__chat_window {
   flex-grow: 1;
-  overflow-y: auto;
+  overflow-y: scroll; 
 }
 
 .main__message_container {
@@ -215,6 +215,9 @@ video {
   list-style: none;
 }
 
+.unmute, .stop {
+  color: #cc3b33;
+}
 
 
 

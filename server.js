@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 app.get("/:room", (req, res) => {
   res.render("room", { roomId: req.params.room });
-})
+});
 
 io.on("connection", socket => {
   socket.on("join-room", (roomId, userId) => {
@@ -29,8 +29,18 @@ io.on("connection", socket => {
 
     socket.on('disconnect', () => {
       socket.to(roomId).broadcast.emit("user-disconnected", userId);
+
+      // Messages
+    socket.on("message", (message) => {
+      //Sending message to the same room
+      io.to(roomId).emit("createMessage", message);
+  }); 
+
+    socket.on("disconnect", () => {
+      socket.to(roomId).broadcast.emit("user-disconnected", userId);
     })
   })
 });
 
-server.listen(process.env.PORT|| 2020);
+server.listen(process.env.PORT||2020);
+
