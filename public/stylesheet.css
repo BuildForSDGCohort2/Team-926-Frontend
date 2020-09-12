@@ -219,12 +219,12 @@ video {
   color: #cc3b33;
 }
 
-/*--footer--*/
+/* footer */
 .navbar-brand {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-} 
+}
 
 footer,
 .copy_right {
@@ -254,15 +254,16 @@ footer,
   letter-spacing: 0.5px;
 }
 
+
+.footer-grids ul li {
+  list-style-type: none;
+}
+
 .footer-grids ul li a {
   font-size: 15px;
   color: #777;
   font-weight: normal;
   letter-spacing: 1px;
-}
-
-.footer-grids ul li {
-  list-style-type: none;
 }
 
 .footer-grids input[type="email"] {
@@ -331,7 +332,7 @@ ul.list-info-wthree li a:hover {
 }
 
 .copy_right p a:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .copy_right p {
