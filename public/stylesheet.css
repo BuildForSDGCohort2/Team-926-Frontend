@@ -95,6 +95,7 @@ nav {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: 0;
@@ -193,7 +194,7 @@ video {
 
 .main__chat_window {
   flex-grow: 1;
-  overflow-y: scroll; 
+  overflow-y: scroll;
 }
 
 .main__message_container {
@@ -208,16 +209,17 @@ video {
   color: #f5f5f5;
 }
 
-.messages{
+.messages {
   color: white;
   list-style: none;
 }
 
-.unmute, .stop {
+.unmute,
+.stop {
   color: #cc3b33;
 }
 
-/*-- footer --*/
+/*--footer--*/
 .navbar-brand {
   display: flex;
   flex-direction: column;
@@ -249,7 +251,7 @@ footer,
   font-size: 15px;
   color: #777;
   font-weight: normal;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .footer-grids ul li a {
@@ -291,13 +293,13 @@ footer,
   -o-border-radius: 0;
 }
 
-h2 a.navbar-brand {
-  color: #fff;
-}
-
 .icon-social a {
   color: #fff;
   margin-right: 0.5em;
+}
+
+h2 a.navbar-brand {
+  color: #fff;
 }
 
 ul.list-info-wthree li a {
@@ -318,8 +320,8 @@ ul.list-info-wthree li a:hover {
   margin-right: 0.5em;
 }
 
-/*-- //footer --*/
-/*--/copy_right--*/
+/* footer */
+/* copy_right */
 .copy_right {
   border-top: 1px solid rgba(221, 221, 221, 0.12);
 }
@@ -340,8 +342,8 @@ ul.list-info-wthree li a:hover {
   margin-top: 0.5em;
 }
 
-/*--//copy_right--*/
-/* /move-top */
+/* copy_right */
+/* move-top */
 a.move-top span {
   color: #ddd;
   width: 36px;
@@ -350,4 +352,4 @@ a.move-top span {
   background: transparent;
 }
 
-/* //move-top */
+/* move-top */
