@@ -29,9 +29,10 @@ navigator.mediaDevices.getUserMedia({
   socket.on("user-connected", (userId) => {
     connectToNewUser(userId, stream);
   });
-    // input value
+    // Input value/Get the message
   let text = $("input");
-  // when press enter send message
+  
+  // when enter is pressed to send message
   $("html").keydown(function (e) {
     console.log(text.val());
     if (e.which === 13 && text.val().length !== 0) {
@@ -66,6 +67,17 @@ const addVideoStream = (video, stream) => {
   })
   videoGrid.append(video)
 }
+
+//Get message
+let text = $("input");
+  // when enter is pressed to send message
+  $("html").keydown(function (e) {
+    console.log(text.val());
+    if (e.which === 13 && text.val().length !== 0) {
+      socket.emit("message", text.val());
+      text.val("")
+    }
+  });
 
 const scrollToBottom = () => {
   let d = $('.main__chat_window');

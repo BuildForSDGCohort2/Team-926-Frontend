@@ -26,20 +26,16 @@ io.on("connection", socket => {
   socket.on("join-room", (roomId, userId) => {
     socket.join(roomId);
     socket.to(roomId).broadcast.emit("user-connected", userId);
-
-    socket.on('disconnect', () => {
-      socket.to(roomId).broadcast.emit("user-disconnected", userId);
-
-      // Messages
+    // Recieve Messages
     socket.on("message", (message) => {
       //Sending message to the same room
       io.to(roomId).emit("createMessage", message);
   }); 
 
+    
     socket.on("disconnect", () => {
       socket.to(roomId).broadcast.emit("user-disconnected", userId);
     })
   })
-});
 });
 server.listen(process.env.PORT||2020);
