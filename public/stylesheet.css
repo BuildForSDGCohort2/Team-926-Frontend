@@ -136,10 +136,6 @@ video {
   flex-direction: column;
 }
 
-.main__right {
-  flex: 0.2;
-}
-
 .main__videos {
   flex-grow: 1;
   background-color: black;
@@ -206,8 +202,8 @@ video {
   padding: 22px 12px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px; 
-  padding-right: 30px; 
+  margin-top: 10px;
+  padding-right: 30px;
 }
 
 .main__message_container input {
@@ -252,6 +248,11 @@ footer,
   color: #feac00;
 }
 
+.icon-social a {
+  color: #fff;
+  margin-right: 0.5em;
+}
+
 .footer-grids p,
 .footer-grids p a,
 .copyright p,
@@ -265,6 +266,10 @@ footer,
 
 .footer-grids ul li {
   list-style-type: none;
+}
+
+.copy_right p a:hover {
+  opacity: 0.8;
 }
 
 .footer-grids ul li a {
@@ -302,11 +307,6 @@ footer,
   -o-border-radius: 0;
 }
 
-.icon-social a {
-  color: #fff;
-  margin-right: 0.5em;
-}
-
 h2 a.navbar-brand {
   color: #fff;
 }
@@ -328,19 +328,13 @@ ul.list-info-wthree li a:hover {
 .ad-info p span {
   margin-right: 0.5em;
 }
-
-/* footer */
-/* copy_right */
+/* footer */ /* copy_right */
 .copy_right {
   border-top: 1px solid rgba(221, 221, 221, 0.12);
 }
 
 .copy_right p a {
   color: #fff;
-}
-
-.copy_right p a:hover {
-  opacity: 0.8;
 }
 
 .copy_right p {
@@ -350,9 +344,7 @@ ul.list-info-wthree li a:hover {
   color: #fff;
   margin-top: 0.5em;
 }
-
-/* copy_right */
-/* move-top */
+/* copy_right */ /* move-top */
 a.move-top span {
   color: #ddd;
   width: 36px;
