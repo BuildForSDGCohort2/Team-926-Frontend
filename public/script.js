@@ -29,17 +29,7 @@ navigator.mediaDevices.getUserMedia({
   socket.on("user-connected", (userId) => {
     connectToNewUser(userId, stream);
   });
-    // Input value/Get the message
-  let text = $("input");
-
-  // when enter is pressed to send message
-  $("html").keydown(function (e) {
-    if (e.which === 13 && text.val().length !== 0) {
-      socket.emit("message", text.val());
-      text.val("")
-    }
-  });
-
+    
   socket.on("createMessage", message => {
     $(".message").append(`<li class="message"><b>user</b><br/>${message}</li>`);
     scrollToBottom();
