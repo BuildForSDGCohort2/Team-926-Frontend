@@ -136,10 +136,6 @@ video {
   flex-direction: column;
 }
 
-.main__right {
-  flex: 0.2;
-}
-
 .main__videos {
   flex-grow: 1;
   background-color: black;
@@ -207,7 +203,7 @@ video {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px; 
-  padding-right: 30px; 
+  padding-right: 30px;
 }
 
 .main__message_container input {
