@@ -41,13 +41,6 @@ nav {
   margin-right: 0;
 }
 
-/*.header-input > em {
-  width: 50px;
-  background-color: #474747;
-  border-left: 1px solid lightgray;
-  color: gray;
-}*/
-
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -356,7 +349,6 @@ h2 a.navbar-brand {
   margin-right: 0.5em;
 }
 
-/* footer */ /* copy_right */
 .copy_right {
   border-top: 1px solid rgba(221, 221, 221, 0.12);
 }
@@ -373,7 +365,6 @@ h2 a.navbar-brand {
   margin-top: 0.5em;
 }
 
-/* copy_right */ /* move-top */
 a.move-top span {
   color: #ddd;
   width: 36px;
@@ -381,5 +372,3 @@ a.move-top span {
   border: transparent;
   background: transparent;
 }
-
-/* move-top */
