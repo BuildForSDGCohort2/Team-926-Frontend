@@ -31,21 +31,27 @@
 <body>
     <nav>
         <div class="logo">
-            <h4> <a class="navbar-brand px-0 mx-0" href="room.ejs">
-                <span style="color:#CC0001;text-shadow: 2px 2px 4px rgba(0,0,0,0.3);" >
+            <h4>
+                <a href="room.ejs" class="navbar-brand">
+                  <span style="color: #cc0001; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
                     <img src="images/image.jpg" alt="African Health Store" class="logo">
-                </a></h4>
-    
+                  </span>
+                </a>     
+              </h4>
         </div>
+        
+        <div class="header-input">
+            <input type="text" placeholder="Search">
+            <!--em class="fas fa-search"></em-->
+        </div>
+
         <ul class="nav-links">
-            <em class="fas fa-home"></em>
-          <li><a href ="room.ejs"> Home </a></li>
-          <li><a href ="solutions.ejs"> Solutions </a></li>
-          <li><a href ="products.ejs"> Products</a></li>
-          <li><a href ="about.ejs"> About </a></li>
-          <li><a href ="contact.ejs"> Projects </a></li>
-          <em class="fas fa-user-plus"></em>
-          <li><a href ="projects.ejs"> Signin </a></li>
+          <li><em class="fas fa-home"></em><a href ="room.ejs"> Home </a></li>
+          <li><em class="fas fa-smog"></em><a href ="solutions.ejs"> Solutions </a></li>
+          <li><em class="fab fa-product-hunt"></em><a href ="products.ejs"> Products</a></li>
+          <li><em class="far fa-address-card"></em><a href ="about.ejs"> About </a></li>
+          <li><em class="fas fa-tasks"></em><a href ="contact.ejs"> Projects </a></li>
+          <li><em class="fas fa-user-plus"></em><a href ="signin.ejs"> Signin </a></li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -84,6 +90,10 @@
                     <div class="main__controls__button">
                        <em class="fas fa-comment-alt"></em>
                        <span>Chat</span>
+                    </div>
+                    <div class="main__controls__button">
+                        <em class="fas fa-record-vinyl"></em>
+                        <span>Record Conversation</span>
                     </div>
                  </div>
                  <div class="main__controls__block">
