@@ -11,7 +11,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #5d4954;
+  background-color:#2b2929;
   font-family: 'Poppins', sans-serif;
   margin-right: 10px;
   position: sticky;
@@ -22,7 +22,7 @@ nav {
 .logo {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-size: 20px;
   margin-left: 20px;
 }
@@ -89,7 +89,7 @@ nav {
     right: 0;
     height: 92vh;
     top: 8vh;
-    background-color: #5d4954;
+    background-color:#2b2929;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,6 +243,9 @@ video {
 .stop {
   color: #cc3b33;
 }
+
+/*Login and Signup form*/
+
 
 /* footer */
 .navbar-brand {
